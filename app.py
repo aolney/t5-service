@@ -18,7 +18,9 @@ t5_version = 't5-large'
 
 config = T5Config.from_pretrained(t5_version)
 tokenizer = T5Tokenizer.from_pretrained(t5_version)
-model = T5ForConditionalGeneration.from_pretrained(t5_version,config=config)
+model = T5ForConditionalGeneration.from_pretrained('./model')
+# Uncomment the line below to pull the model from your cache -- but note Docker will redownload on restart if you do this
+# model = T5ForConditionalGeneration.from_pretrained(t5_version,config=config)
 
 # DEBUG
 # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

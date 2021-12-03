@@ -16,6 +16,11 @@ followed by:
 conda activate t5
 ```
 
+## Model
+
+A generic T5 model is used. For Docker deployment, it is preferable to save it to the local directory rather than repeatly downloading it.
+This can be done by running the `save-t5.py` script.
+
 ## Server
 
 The server is contained in `app.py`, so all modifications should be made there.
