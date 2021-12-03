@@ -31,6 +31,8 @@ model = model.to(device)
 # Fill in <extra_id_0> token
 def getFillIn(text, fillLength, responseCount):
 
+    text = text + "  </s>"
+
     # encode text
     encoding = tokenizer.encode_plus(text, add_special_tokens=True, return_tensors="pt")
     input_ids, attention_masks = encoding["input_ids"].to(device), encoding["attention_mask"].to(device)
