@@ -50,6 +50,8 @@ These tests document how to call the server, but essentially it is POSTing JSON 
 
 ```json
 {
-    "text":"Epithelial tissue, also referred to as  <extra_id_0>, refers to the sheets of cells that cover exterior surfaces of the body, line internal cavities and passageways, and form certain glands."
+    "text":"Epithelial tissue, also referred to as  <extra_id_0>, refers to the sheets of cells that cover exterior surfaces of the body, line internal cavities and passageways, and form certain glands.",
+    "fillLength": 10,
+    "responseCount": 2
 }
 ```
